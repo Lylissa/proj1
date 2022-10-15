@@ -1,0 +1,27 @@
+
+{% load static %}
+
+{% block content %}
+  <!DOCTYPE html>
+  <html>
+  <head>
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  </head>
+  <body>
+      <div class="login-page">
+        <div class="form">
+          <div class="login">
+            <div class="login-header">
+              <h5>ADMIN AUTHENTICATION</h5>
+            </div>
+          </div>
+          <form class="login-form">
+            <input type="text" placeholder="Email"/>
+            <input type="password" placeholder="Password"/>
+            <button>login</button>
+          </form>
+        </div>
+      </div>
+  </body>
+  </html>
+{% endblock content %}

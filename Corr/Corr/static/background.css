@@ -1,0 +1,21 @@
+body{
+    background-image: url('corr/images/r.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #5C6DBF;
+}
+
+footer{
+    margin-top: auto;
+}
+
+.container{
+    background-repeat: no-repeat;
+    background-position: 50%,50%;
+    background-size: 700px,500px;
+    text-align: center;
+}
+
