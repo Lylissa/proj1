@@ -35,20 +35,20 @@
 
       
             <div class="container">
-                <div class="row justify-content-center align-items-center h-100">
-                    <div class="col-xs-12 col-sm-12 col-md-4 well well-sm" style="margin-top: -100px;">
+                <div style="background-color: black;"class="row justify-content-center align-items-center h-100">
+                    <div class="col-xs-12 col-sm-12 col-md-4 well well-sm" style="margin-top: -100px; margin-left: 200px;">
                       <br><br><br><br>
                         <form action="" method="POST" class="form" role="form">
-                          <h2 style="margin-left: -150px;">Reservation Details</h2>
+                          <h2 style="margin-left: -150px; color: white; margin-top: 150px;"> <b>BOOK A CONFERENCE ROOOM</h2>
                           {% csrf_token %}
-                          <div class="form-group" style="margin-left: -300px;">
+                          <div class="form-group" style="margin-left: -300px; color: white;">
                             <label for="title">Date</label>
                           <span style="text-align: center;"> 
                                 <input class="form-control" style="width: 700px; height: 30px; border-radius: 3px; box-shadow: inset 0 0 3px #000000;" id="id-date" name="udate" placeholder="date" type="date"
                                     required autofocus />
                           </span> 
                         </div>
-                        <div class="form-group" style="margin-left: -300px;">
+                        <div class="form-group" style="margin-left: -300px; color: white;">
                           <label for="title">Start Time</label>
                           <select style="width: 700px; height: 40px; border-radius: 3px; box-shadow: inset 0 0 3px #000000;" name="ustartTime" id="id-startTime" class="form-control">
                               <option value="09:00">09:00</option>
@@ -66,7 +66,7 @@
                             <input class="form-control" id="id-startTime" name="startTime" placeholder="startTime" type="text"/>
                         </span> -->
                        
-                        <div class="form-group" style="margin-left: -300px;">
+                        <div class="form-group" style="margin-left: -300px; color: white;">
                           <label for="title">End Time</label>
                           <select style="width: 700px; height: 40px; border-radius: 3px; box-shadow: inset 0 0 3px #000000;" name="uendTime" id="id-endTime" class="form-control">
                               <option value="09:00">09:00</option>
@@ -91,8 +91,8 @@
                           <input class="form-control" id="id-roomName" name="roomName" placeholder="roomName" type="text"/>
                         </span> -->
                        
-                          <div class="form-group" style="margin-left: -300px;">
-                            <select name="title" style="width: 700px; height: 40px; border-radius: 3px; box-shadow: inset 0 0 3px #000000;" id="id-title" class="form-control"> 
+                          <div class="form-group" style="margin-left: -300px; color: white;">
+                            <select name="title" style="width: 700px; height: 40px; border-radius: 3px; box-shadow: inset 0 0 3px #000000; " id="id-title" class="form-control"> 
                               <option value="">Room Name</option>
                               {% for i in image %}
                                 <option value="{{i.id}}">{{i.title}}</option>											
@@ -112,14 +112,12 @@
                             <option value="Room BL">Black room Style</option>
                           </select>
                         </div>-->
-                        <h2 style="margin-left: -150px;">Personal  Details</h2>
-                        <br>
-                        <div class="form-group" style="margin-left: -300px;">
+                        <h2 style="margin-left: -100px; margin-top: 50px; color: white;"> <b>PERSONAL DETAILS</h2>
+                        <div class="form-group" style="margin-left: -300px; color: white;">
                           <label for="title">Name</label>
-                          <br>
-                          <br>    
+                          <br>  
                           <span class="form-sub-label-container" style="vertical-align:top" data-input-type="prefix">
-                            <select style="width: 700px; height: 30px; border-radius: 3px; box-shadow: inset 0 0 3px #000000; font-size: 14px;" data-component="prefix" name="uprefix" id="id-prefix" class="dropdown-match-height form-dropdown validate[required]" type="text">
+                            <select style="width: 100px; height: 30px; border-radius: 3px; box-shadow: inset 0 0 3px #000000; font-size: 14px;" data-component="prefix" name="uprefix" id="id-prefix" class="dropdown-match-height form-dropdown validate[required]" type="text">
                               <option value="Mr."> Mr. </option>
                               <option value="Ms."> Ms. </option>
                             </select>
@@ -157,8 +155,7 @@
                         </span> 
                         </div>
                         <br>
-                        <h2 style="margin-left: -150px;">Contact  Details</h2>
-                        <br>
+                        <h2 style="margin-left: -110px; color: white;"> <b>CONTACT DETIALS</h2>
                         <div class="form-group" style="margin-left: -300px;">
                         <span style="text-align: center;"> 
                           <input style="width: 700px; height: 30px; border-radius: 3px; box-shadow: inset 0 0 3px #000000;" class="form-control" id="id-email" name="uemail" placeholder="Email" type="text"/>
@@ -169,7 +166,7 @@
                         </span> 
                         </div>
                         <br> 
-                        <h2 style="margin-left: -150px;">Price</h2>
+                        <h2 style="margin-left: -90px; color: white;"> <b>PRICE</h2>
                         <div class="form-group" style="margin-left: -300px;">
                         <span style="text-align: center;" name="price"> 
                           {% for i in image %}
@@ -178,7 +175,7 @@
                         </span>
                         </div>
                         <br>
-                        <button style="margin-bottom: 20px; width: 700px; margin-left: -300px;" class="btn btn-lg btn-primary btn-block" type="submit" name="btnSUbmit">
+                        <button style="margin-bottom: 20px; width: 100px; margin-left: -300px; " class="btn btn-lg btn-primary btn-block" type="submit" name="btnSUbmit">
                           Submit</button>
                           </div>
                           <br>
